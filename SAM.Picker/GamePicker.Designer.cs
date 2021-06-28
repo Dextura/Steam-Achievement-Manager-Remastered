@@ -102,6 +102,7 @@
             // 
             // _AddGameTextBox
             // 
+            this._AddGameTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this._AddGameTextBox.Name = "_AddGameTextBox";
             this._AddGameTextBox.Size = new System.Drawing.Size(100, 25);
             // 
@@ -164,9 +165,11 @@
             // 
             // _GameListView
             // 
-            this._GameListView.BackColor = System.Drawing.Color.Black;
+            this._GameListView.BackColor = System.Drawing.Color.DarkGray;
+            this._GameListView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("_GameListView.BackgroundImage")));
             this._GameListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._GameListView.ForeColor = System.Drawing.Color.White;
+            this._GameListView.ForeColor = System.Drawing.Color.DarkRed;
+            this._GameListView.HideSelection = false;
             this._GameListView.LargeImageList = this._LogoImageList;
             this._GameListView.Location = new System.Drawing.Point(0, 25);
             this._GameListView.MultiSelect = false;
@@ -231,7 +234,8 @@
             this.Controls.Add(this._PickerToolStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GamePicker";
-            this.Text = "Steam Achievement Manager Remastered  | Pick a game and unlock achievements fast and easy, You won't get banned using this";
+            this.Text = "Steam Achievement Manager Remastered  | Pick a game and unlock achievements fast " +
+    "and easy, You won\'t get banned using this";
             this._PickerToolStrip.ResumeLayout(false);
             this._PickerToolStrip.PerformLayout();
             this._PickerStatusStrip.ResumeLayout(false);
