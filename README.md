@@ -1,8 +1,12 @@
 # Steam-Achievement-Manager-Remastered
 
 ## This is a remaster to the popular Steam Achievement Manager.
+- Updated
+- Faster
+- Revisioned
 
 ## It Will Be Updated When Bugs Are Found
+- Please Post Any Bugs Found In The Issues Section!
+- Bugs Will Be Checked Within A Day Of A Bug Found!
 
-## This Is Remastered And Revisioned Along With Updated!
 
