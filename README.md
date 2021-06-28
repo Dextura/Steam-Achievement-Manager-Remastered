@@ -9,4 +9,12 @@
 - Please Post Any Bugs Found In The Issues Section!
 - Bugs Will Be Checked Within A Day Of A Bug Found!
 
+## Support For VS2019
+- Now Supports VS2019 And Cleaned For VS2019
+
+## Orginal Project And Creator.
+- Creator: https://github.com/gibbed
+- Project: https://github.com/gibbed/SteamAchievementManager
+- Please Check Gibbed Out 
+
 
