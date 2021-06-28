@@ -43,12 +43,12 @@
             this._FilterDemosMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._FilterModsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._FilterJunkMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this._GameListView = new SAM.Picker.DoubleBufferedListView();
             this._PickerStatusStrip = new System.Windows.Forms.StatusStrip();
             this._PickerStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this._DownloadStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this._LogoWorker = new System.ComponentModel.BackgroundWorker();
             this._ListWorker = new System.ComponentModel.BackgroundWorker();
+            this._GameListView = new SAM.Picker.DoubleBufferedListView();
             _ToolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             _ToolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this._PickerToolStrip.SuspendLayout();
@@ -163,29 +163,6 @@
             this._FilterJunkMenuItem.Text = "Show &junk";
             this._FilterJunkMenuItem.CheckedChanged += new System.EventHandler(this.OnFilterUpdate);
             // 
-            // _GameListView
-            // 
-            this._GameListView.BackColor = System.Drawing.Color.DarkGray;
-            this._GameListView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("_GameListView.BackgroundImage")));
-            this._GameListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._GameListView.ForeColor = System.Drawing.Color.DarkRed;
-            this._GameListView.HideSelection = false;
-            this._GameListView.LargeImageList = this._LogoImageList;
-            this._GameListView.Location = new System.Drawing.Point(0, 25);
-            this._GameListView.MultiSelect = false;
-            this._GameListView.Name = "_GameListView";
-            this._GameListView.Size = new System.Drawing.Size(742, 245);
-            this._GameListView.SmallImageList = this._LogoImageList;
-            this._GameListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this._GameListView.TabIndex = 0;
-            this._GameListView.TileSize = new System.Drawing.Size(184, 69);
-            this._GameListView.UseCompatibleStateImageBehavior = false;
-            this._GameListView.VirtualMode = true;
-            this._GameListView.ItemActivate += new System.EventHandler(this.OnActivateGame);
-            this._GameListView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.OnSelectGame);
-            this._GameListView.RetrieveVirtualItem += new System.Windows.Forms.RetrieveVirtualItemEventHandler(this.OnGameListViewRetrieveVirtualItem);
-            this._GameListView.SearchForVirtualItem += new System.Windows.Forms.SearchForVirtualItemEventHandler(this.OnGameListViewSearchForVirtualItem);
-            // 
             // _PickerStatusStrip
             // 
             this._PickerStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -223,6 +200,29 @@
             this._ListWorker.WorkerSupportsCancellation = true;
             this._ListWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.DoDownloadList);
             this._ListWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.OnDownloadList);
+            // 
+            // _GameListView
+            // 
+            this._GameListView.BackColor = System.Drawing.Color.DarkGray;
+            this._GameListView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("_GameListView.BackgroundImage")));
+            this._GameListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._GameListView.ForeColor = System.Drawing.Color.DarkRed;
+            this._GameListView.HideSelection = false;
+            this._GameListView.LargeImageList = this._LogoImageList;
+            this._GameListView.Location = new System.Drawing.Point(0, 25);
+            this._GameListView.MultiSelect = false;
+            this._GameListView.Name = "_GameListView";
+            this._GameListView.Size = new System.Drawing.Size(742, 245);
+            this._GameListView.SmallImageList = this._LogoImageList;
+            this._GameListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this._GameListView.TabIndex = 0;
+            this._GameListView.TileSize = new System.Drawing.Size(184, 69);
+            this._GameListView.UseCompatibleStateImageBehavior = false;
+            this._GameListView.VirtualMode = true;
+            this._GameListView.ItemActivate += new System.EventHandler(this.OnActivateGame);
+            this._GameListView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.OnSelectGame);
+            this._GameListView.RetrieveVirtualItem += new System.Windows.Forms.RetrieveVirtualItemEventHandler(this.OnGameListViewRetrieveVirtualItem);
+            this._GameListView.SearchForVirtualItem += new System.Windows.Forms.SearchForVirtualItemEventHandler(this.OnGameListViewSearchForVirtualItem);
             // 
             // GamePicker
             // 
